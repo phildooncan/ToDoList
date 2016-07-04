@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <title>To Do List</title>
+      <link rel="stylesheet" href="todo.css">
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+       integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+       integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+      <script src="jquery-2.2.4.js"></script>
+
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+      <script src="todo.js"></script>
+
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-2">
+            <h1 class="text-center">To Do List</h1>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="text-center">Select Theme:
+              <form id="theme">
+                <label class="radio-inline"><input type="radio" name="Theme" value="default" checked>Default Bootstrap</label>
+                <label class="radio-inline"><input type="radio" name="Theme" value="gators">Gators</label>
+                <label class="radio-inline"><input type="radio" name="Theme" value="knights">Knights</label>
+              </form>
+            </h4>
+          </div>
+    </div>
+    <div class="container">
+      <div class="row tasks">
+        <div class="col-md-3 col-lg-3">
+          <div class="task text-center well" id="toDo">
+            <h3>To Do</h3>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-lg-3">
+          <div class="task text-center well" id="inProgress">
+            <h3>Working On It</h3>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-lg-3">
+          <div class="task text-center well" id="completed">
+            <h3>Finished It</h3>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-lg-3">
+          <div class="task text-center well" id="new">
+            <h3>Create a New Task</h3>
+            <div class="input-group">
+              <input type="text" class="newTask" placeholder="Task"></input><br>
+              <input type="text" id="datepicker" class="newTask" placeholder="Date"></input><br>
+              <textarea  rows="4" class="newTask" placeholder="Description (Optional)"></textarea><br>
+              <input type="button" class="btn btn-primary" value="Submit"></input>
+              <input type="button" class="btn btn-danger" value="Remove All"></input>
+            </div>
+          </div>
+          <div class="well" id="delete">
+            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+
+</html>

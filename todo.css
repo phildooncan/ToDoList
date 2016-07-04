@@ -1,0 +1,77 @@
+.jumbotron{
+  height: 100px;
+}
+.jumbotron h1{
+  margin-top: -7.5%;
+}
+.jumbotron h4{
+  margin-top: -3.5%;
+}
+.knightsBackground{
+  background-image: url(ucf.jpg);
+  background-size: cover;
+}
+.gatorsBackground{
+  background-image: url(ufl.svg);
+  background-size: cover;
+}
+.gators{
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  border-radius: 25px;
+}
+.knights{
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+.task{
+  margin: 5% 2% 0 2%;
+  width: 275px;
+}
+#toDo, #inProgress, #completed{
+  height: 475px;
+}
+#new{
+  height: 300px;
+}
+.highlighted{
+  color: red;
+}
+.glyphicon{
+  color: black;
+  font-size: 60px;
+  margin-top: 0px;
+  margin-left: -3px;
+}
+#delete{
+  height: 100px;
+  width: 100px;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+.glyphGators{
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.glyphKnights{
+  color: white;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.hover{
+  color: red;
+}
+.newTask{
+  width: 268px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: -16px;
+}
+.newTask{
+  color: black;
+}
