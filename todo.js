@@ -1,7 +1,9 @@
-
+alert("Update 7/18: \n This week I am working on the form input");
 $( document ).ready(function() {
 //theme for the widget based on selection in radio: default, gators, or knights
     $("#datepicker").datepicker();
+
+    $("#draggable").draggable();;
 
     $('#theme input').on('change', function(){
       var selection = $('input[name=Theme]:checked', '#theme').val();
@@ -18,13 +20,9 @@ $( document ).ready(function() {
 
     });
 
-    $(".glyphicon").hover(
-      function(){
-        $(this).addClass("hover");
-      },
-      function(){
-        $(this).removeClass("hover");
-      });
+    $(".todo-task").click("on", function(){
+      $(this).toggleClass("highlighted");
+    });
 
 });
 //functions for the theme radio selection
@@ -37,13 +35,9 @@ function gatorTheme(){
   $(".task").removeClass("knights");
   $(".task").addClass("gators")
             .addClass("shadow");
-  $("#delete").removeClass("well")
-              .removeClass("knights")
-              .addClass("gators")
-              .addClass("shadow");
-  $(".glyphicon").removeClass("glyphKnights")
-                 .addClass("glyphGators");
   $(".newTask").css("margin-left", "2px");
+  $(".todo-task").css("margin-top", "0px")
+                .css("margin-left", "4px");
 }
 
 
@@ -55,13 +49,9 @@ function knightTheme(){
   $(".task").removeClass("gators");
   $(".task").addClass("knights")
             .addClass("shadow");
-  $("#delete").removeClass("well")
-              .removeClass("gators")
-              .addClass("knights")
-              .addClass("shadow");
-  $(".glyphicon").removeClass("glyphGators")
-                 .addClass("glyphKnights");
   $(".newTask").css("margin-left", "2px");
+  $(".todo-task").css("margin-top", "0px")
+                .css("margin-left", "4px");
 }
 
 
@@ -73,11 +63,5 @@ function removeItAll(){
             .removeClass("knights")
             .removeClass("shadow");
   $(".task").addClass("well");
-  $("#delete").removeClass("shadow")
-              .removeClass("gators")
-              .removeClass("knights")
-              .addClass("well");
-  $(".glyphicon").removeClass("glyphKnights")
-                .removeClass("glyphGators");
   $(".newTask").css("margin-left", "-16px");
 }

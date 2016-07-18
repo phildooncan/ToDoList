@@ -49,6 +49,11 @@
         <div class="col-md-3 col-lg-3">
           <div class="task text-center well" id="toDo">
             <h3>To Do</h3>
+            <div class="todo-task" id="draggable">
+              <div class="task-name">Read From Book</div>
+              <div class="task-date">7/11/2016</div>
+              <div class="task-desc">qwkfhjasdnfj sjdfnasjdfn  jbsd sadkjnb sdjkfn</div>
+            </div>
           </div>
         </div>
 
@@ -71,12 +76,9 @@
               <input type="text" class="newTask" placeholder="Task"></input><br>
               <input type="text" id="datepicker" class="newTask" placeholder="Date"></input><br>
               <textarea  rows="4" class="newTask" placeholder="Description (Optional)"></textarea><br>
-              <input type="button" class="btn btn-primary" value="Submit"></input>
-              <input type="button" class="btn btn-danger" value="Remove All"></input>
+              <input type="button" class="btn btn-primary" value="Submit" id="submit"></input>
+              <input type="button" class="btn btn-danger" value="Remove All" id="removeAllTasks"></input>
             </div>
-          </div>
-          <div class="well" id="delete">
-            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
           </div>
         </div>
 
